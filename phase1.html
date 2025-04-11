@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Phase 1 &ndash; Project Idea Submission</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="phase-1--project-idea-submission">Phase 1 – Project Idea Submission</h1>
+<h2 id="project-title-web-scraping--analysis-of-imdbs-top-250-movies">Project Title: Web Scraping &amp; Analysis of IMDb's Top 250 Movies</h2>
+<h3 id="1-website-to-scrape">1. Website to Scrape</h3>
+<p>For our project, we’ve chosen to scrape data from the <a href="https://www.imdb.com/chart/top/">IMDb Top 250 Movies</a> page. This list includes the highest-rated movies on IMDb and provides key information about each film, making it ideal for analysis.</p>
+<hr>
+<h3 id="2-what-data-will-be-collected">2. What Data Will Be Collected</h3>
+<p>From the IMDb Top 250 page and individual movie links, we’ll collect the following details:</p>
+<ul>
+<li><strong>Movie Title</strong></li>
+<li><strong>Genre</strong></li>
+<li><strong>Release Year</strong></li>
+<li><strong>IMDb Rating</strong></li>
+<li><strong>Main Cast</strong></li>
+<li><strong>Number of Ratings</strong></li>
+<li><strong>Director Name</strong></li>
+</ul>
+<p>This dataset will allow us to explore various aspects of popular cinema and audience preferences.</p>
+<hr>
+<h3 id="3-project-objective">3. Project Objective</h3>
+<p>The goal of this project is to analyze the top-rated movies on IMDb to discover:</p>
+<ul>
+<li>Which <strong>genres</strong>, <strong>actors</strong>, and <strong>directors</strong> appear most frequently among the top 250 movies.</li>
+<li>How audience preferences have changed <strong>across decades</strong> (e.g., genre trends, rating patterns).</li>
+<li>Which genres or creative individuals are linked to <strong>consistently high ratings</strong> and <strong>viewer engagement</strong> (number of ratings).</li>
+</ul>
+<p>Our insights could be helpful for film students, researchers, or even studios looking to understand what types of films tend to succeed with audiences.</p>
+<hr>
+<h3 id="4-data-cleaning--processing">4. Data Cleaning &amp; Processing</h3>
+<p>Once the raw data is extracted, we’ll clean and organize it using <strong>Pandas</strong>. We’ll convert the data into a structured <strong>DataFrame</strong>, then save it as a <strong>JSON file</strong> for easier use later.</p>
+<p>We’ll also apply <strong>Regular Expressions (Regex)</strong> to handle text cleaning tasks like:</p>
+<ul>
+<li>Removing unwanted characters or formatting.</li>
+<li>Extracting and cleaning email/text fields (if any).</li>
+<li>Standardizing date formats.</li>
+</ul>
+<p>The result will be a clean and ready-to-analyze dataset.</p>
+<hr>
+<h3 id="5-data-analysis--visualization">5. Data Analysis &amp; Visualization</h3>
+<p>Using <strong>Seaborn</strong> and <strong>Matplotlib</strong>, we’ll perform both statistical and visual analysis to uncover meaningful trends. Our focus will be on answering questions like:</p>
+<ul>
+<li>What are the most <strong>popular genres</strong> among the top 250?</li>
+<li>Which <strong>actors and directors</strong> appear most often in highly rated movies?</li>
+<li>How do movie ratings and genres vary across <strong>different decades</strong>?</li>
+<li>Are there differences between movies with <strong>high ratings vs. high engagement</strong>?</li>
+</ul>
+<h4 id="planned-visuals">Planned Visuals:</h4>
+<ul>
+<li><strong>Bar Charts</strong> for top genres, directors, and actors.</li>
+<li><strong>Line Graphs</strong> showing rating or genre trends over time.</li>
+<li><strong>Heatmaps</strong> to explore correlations between genres, ratings, and number of ratings.</li>
+<li><strong>Pie Charts</strong> to show genre distributions.</li>
+<li><strong>Box Plots</strong> to highlight rating spreads across decades or genres.</li>
+</ul>
+<hr>
+<h3 id="6-data-storage">6. Data Storage</h3>
+<p>After processing, we’ll save the final dataset as a <strong>JSON file</strong>. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases like MongoDB if needed.</p>
+<hr>
+<h3 id="7-optional-web-app-deployment-with-streamlit">7. (Optional) Web App Deployment with Streamlit</h3>
+<p>If time allows, we’d like to build a simple <strong>Streamlit app</strong> to showcase our findings interactively. Users could:</p>
+<ul>
+<li>Browse visual summaries.</li>
+<li>Filter results by decade or genre.</li>
+<li>Explore trends in a more dynamic way.</li>
+</ul>
+<p>This would be a bonus step to improve the presentation and make the project more engaging.</p>
+<hr>
+
+            
+            
+        </body>
+        </html>
