@@ -139,71 +139,73 @@
         </head>
         <body class="vscode-body vscode-light">
             <h1 id="phase-1--project-idea-submission">Phase 1 – Project Idea Submission</h1>
-<h2 id="project-title-web-scraping--analysis-of-imdbs-top-250-movies">Project Title: Web Scraping &amp; Analysis of IMDb's Top 250 Movies</h2>
+<h2 id="project-title-web-scraping--analysis-of-books-from-books-to-scrape">Project Title: Web Scraping &amp; Analysis of Books from Books to Scrape</h2>
 <h3 id="1-website-to-scrape">1. Website to Scrape</h3>
-<p>For our project, we’ve chosen to scrape data from the <a href="https://www.imdb.com/chart/top/">IMDb Top 250 Movies</a> page. This list includes the highest-rated movies on IMDb and provides key information about each film, making it ideal for analysis.</p>
+<p>For our project, we’ve chosen to scrape data from the <a href="https://books.toscrape.com/">Books to Scrape</a> website. This site provides a variety of books, including their ratings, prices, and categories, making it ideal for our analysis.</p>
 <hr>
 <h3 id="2-what-data-will-be-collected">2. What Data Will Be Collected</h3>
-<p>From the IMDb Top 250 page and individual movie links, we’ll collect the following details:</p>
+<p>From the Books to Scrape site, we will collect the following details for each book:</p>
 <ul>
-<li><strong>Movie Title</strong></li>
-<li><strong>Genre</strong></li>
-<li><strong>Release Year</strong></li>
-<li><strong>IMDb Rating</strong></li>
-<li><strong>Main Cast</strong></li>
-<li><strong>Number of Ratings</strong></li>
-<li><strong>Director Name</strong></li>
+<li><strong>Book Title</strong></li>
+<li><strong>Price</strong></li>
+<li><strong>Star Rating</strong></li>
+<li><strong>Availability (In stock or not)</strong></li>
+<li><strong>Category/Genre</strong></li>
+<li><strong>Product Description</strong></li>
+<li><strong>UPC (Product Code)</strong></li>
+<li><strong>Number of Reviews</strong></li>
+<li><strong>Book URL</strong> (optional for reference)</li>
 </ul>
-<p>This dataset will allow us to explore various aspects of popular cinema and audience preferences.</p>
+<p>This dataset will allow us to explore various aspects of the books' market trends, ratings, and pricing.</p>
 <hr>
 <h3 id="3-project-objective">3. Project Objective</h3>
-<p>The goal of this project is to analyze the top-rated movies on IMDb to discover:</p>
+<p>The goal of this project is to analyze the books on the website to discover:</p>
 <ul>
-<li>Which <strong>genres</strong>, <strong>actors</strong>, and <strong>directors</strong> appear most frequently among the top 250 movies.</li>
-<li>How audience preferences have changed <strong>across decades</strong> (e.g., genre trends, rating patterns).</li>
-<li>Which genres or creative individuals are linked to <strong>consistently high ratings</strong> and <strong>viewer engagement</strong> (number of ratings).</li>
+<li>The <strong>relationship between price and star rating</strong> for books.</li>
+<li>The <strong>distribution of books by category/genre</strong>.</li>
+<li>Which <strong>categories</strong> have the <strong>highest-rated</strong> or <strong>most-reviewed</strong> books.</li>
+<li>Identify the books with the <strong>highest reviews or prices</strong> (top N books).</li>
 </ul>
-<p>Our insights could be helpful for film students, researchers, or even studios looking to understand what types of films tend to succeed with audiences.</p>
+<p>These insights will be valuable for <strong>book lovers</strong> looking to discover trends in the market.</p>
 <hr>
 <h3 id="4-data-cleaning--processing">4. Data Cleaning &amp; Processing</h3>
-<p>Once the raw data is extracted, we’ll clean and organize it using <strong>Pandas</strong>. We’ll convert the data into a structured <strong>DataFrame</strong>, then save it as a <strong>JSON file</strong> for easier use later.</p>
-<p>We’ll also apply <strong>Regular Expressions (Regex)</strong> to handle text cleaning tasks like:</p>
+<p>Once the raw data is extracted, we will clean and organize it using <strong>Pandas</strong>. The data will be converted into a structured <strong>DataFrame</strong>, and saved as a <strong>JSON file</strong> for easy future use.</p>
+<p>We will also apply <strong>Regular Expressions (Regex)</strong> to handle text cleaning tasks like:</p>
 <ul>
 <li>Removing unwanted characters or formatting.</li>
-<li>Extracting and cleaning email/text fields (if any).</li>
-<li>Standardizing date formats.</li>
+<li>Extracting and cleaning text fields (like descriptions).</li>
+<li>Standardizing date formats (if applicable).</li>
 </ul>
 <p>The result will be a clean and ready-to-analyze dataset.</p>
 <hr>
 <h3 id="5-data-analysis--visualization">5. Data Analysis &amp; Visualization</h3>
-<p>Using <strong>Seaborn</strong> and <strong>Matplotlib</strong>, we’ll perform both statistical and visual analysis to uncover meaningful trends. Our focus will be on answering questions like:</p>
+<p>Using <strong>Seaborn</strong> and <strong>Matplotlib</strong>, we will perform both statistical and visual analysis to uncover meaningful trends. Our focus will be on answering questions like:</p>
 <ul>
-<li>What are the most <strong>popular genres</strong> among the top 250?</li>
-<li>Which <strong>actors and directors</strong> appear most often in highly rated movies?</li>
-<li>How do movie ratings and genres vary across <strong>different decades</strong>?</li>
-<li>Are there differences between movies with <strong>high ratings vs. high engagement</strong>?</li>
+<li>What is the <strong>relationship between price and star rating</strong> for the books?</li>
+<li>What is the <strong>distribution of books by category/genre</strong>?</li>
+<li>Which <strong>categories</strong> have the <strong>highest-rated</strong> or <strong>most-reviewed</strong> books?</li>
+<li>Which books have the <strong>highest reviews or prices</strong>?</li>
 </ul>
-<h4 id="planned-visuals">Planned Visuals:</h4>
+<h4 id="planned-visuals">Planned Visuals</h4>
 <ul>
-<li><strong>Bar Charts</strong> for top genres, directors, and actors.</li>
-<li><strong>Line Graphs</strong> showing rating or genre trends over time.</li>
-<li><strong>Heatmaps</strong> to explore correlations between genres, ratings, and number of ratings.</li>
-<li><strong>Pie Charts</strong> to show genre distributions.</li>
-<li><strong>Box Plots</strong> to highlight rating spreads across decades or genres.</li>
+<li><strong>Bar Charts</strong> for top genres, book categories, and rating distributions.</li>
+<li><strong>Scatter Plots</strong> to show relationships between price and star ratings.</li>
+<li><strong>Pie Charts</strong> to show the distribution of books across categories.</li>
+<li><strong>Word Clouds</strong> to highlight frequent keywords from book descriptions or categories.</li>
+<li><strong>Box Plots</strong> to examine price distributions across categories.</li>
 </ul>
 <hr>
 <h3 id="6-data-storage">6. Data Storage</h3>
-<p>After processing, we’ll save the final dataset as a <strong>JSON file</strong>. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases like MongoDB if needed.</p>
+<p>After processing, we’ll save the final dataset as a <strong>JSON file</strong>. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases.</p>
 <hr>
 <h3 id="7-optional-web-app-deployment-with-streamlit">7. (Optional) Web App Deployment with Streamlit</h3>
 <p>If time allows, we’d like to build a simple <strong>Streamlit app</strong> to showcase our findings interactively. Users could:</p>
 <ul>
-<li>Browse visual summaries.</li>
-<li>Filter results by decade or genre.</li>
-<li>Explore trends in a more dynamic way.</li>
+<li>Browse visual summaries and trends.</li>
+<li>Filter results by genre, price range, or rating.</li>
+<li>Explore the relationships between different book attributes in a dynamic way.</li>
 </ul>
 <p>This would be a bonus step to improve the presentation and make the project more engaging.</p>
-<hr>
 
             
             

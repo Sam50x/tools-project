@@ -1,80 +1,89 @@
-# Phase 1 – Project Idea Submission
-## Project Title: Web Scraping & Analysis of IMDb's Top 250 Movies
+# Phase 1 – Project Idea Submission  
+
+## Project Title: Web Scraping & Analysis of Books from Books to Scrape
 
 ### 1. Website to Scrape  
-For our project, we’ve chosen to scrape data from the [IMDb Top 250 Movies](https://www.imdb.com/chart/top/) page. This list includes the highest-rated movies on IMDb and provides key information about each film, making it ideal for analysis.
+
+For our project, we’ve chosen to scrape data from the [Books to Scrape](https://books.toscrape.com/) website. This site provides a variety of books, including their ratings, prices, and categories, making it ideal for our analysis.
 
 ---
 
 ### 2. What Data Will Be Collected  
-From the IMDb Top 250 page and individual movie links, we’ll collect the following details:
 
-- **Movie Title**
-- **Genre**
-- **Release Year**
-- **IMDb Rating**
-- **Main Cast**
-- **Number of Ratings**
-- **Director Name**
+From the Books to Scrape site, we will collect the following details for each book:
 
-This dataset will allow us to explore various aspects of popular cinema and audience preferences.
+- **Book Title**
+- **Price**
+- **Star Rating**
+- **Availability (In stock or not)**
+- **Category/Genre**
+- **Product Description**
+- **UPC (Product Code)**
+- **Number of Reviews**
+- **Book URL** (optional for reference)
+
+This dataset will allow us to explore various aspects of the books' market trends, ratings, and pricing.
 
 ---
 
 ### 3. Project Objective  
-The goal of this project is to analyze the top-rated movies on IMDb to discover:
 
-- Which **genres**, **actors**, and **directors** appear most frequently among the top 250 movies.
-- How audience preferences have changed **across decades** (e.g., genre trends, rating patterns).
-- Which genres or creative individuals are linked to **consistently high ratings** and **viewer engagement** (number of ratings).
+The goal of this project is to analyze the books on the website to discover:
+
+- The **relationship between price and star rating** for books.
+- The **distribution of books by category/genre**.
+- Which **categories** have the **highest-rated** or **most-reviewed** books.
+- Identify the books with the **highest reviews or prices** (top N books).
   
-Our insights could be helpful for film students, researchers, or even studios looking to understand what types of films tend to succeed with audiences.
+These insights will be valuable for **book lovers** looking to discover trends in the market.
 
 ---
 
 ### 4. Data Cleaning & Processing  
-Once the raw data is extracted, we’ll clean and organize it using **Pandas**. We’ll convert the data into a structured **DataFrame**, then save it as a **JSON file** for easier use later.
 
-We’ll also apply **Regular Expressions (Regex)** to handle text cleaning tasks like:
+Once the raw data is extracted, we will clean and organize it using **Pandas**. The data will be converted into a structured **DataFrame**, and saved as a **JSON file** for easy future use.
+
+We will also apply **Regular Expressions (Regex)** to handle text cleaning tasks like:
 
 - Removing unwanted characters or formatting.
-- Extracting and cleaning email/text fields (if any).
-- Standardizing date formats.
+- Extracting and cleaning text fields (like descriptions).
+- Standardizing date formats (if applicable).
 
 The result will be a clean and ready-to-analyze dataset.
 
 ---
 
 ### 5. Data Analysis & Visualization  
-Using **Seaborn** and **Matplotlib**, we’ll perform both statistical and visual analysis to uncover meaningful trends. Our focus will be on answering questions like:
 
-- What are the most **popular genres** among the top 250?
-- Which **actors and directors** appear most often in highly rated movies?
-- How do movie ratings and genres vary across **different decades**?
-- Are there differences between movies with **high ratings vs. high engagement**?
+Using **Seaborn** and **Matplotlib**, we will perform both statistical and visual analysis to uncover meaningful trends. Our focus will be on answering questions like:
 
-#### Planned Visuals:
-- **Bar Charts** for top genres, directors, and actors.
-- **Line Graphs** showing rating or genre trends over time.
-- **Heatmaps** to explore correlations between genres, ratings, and number of ratings.
-- **Pie Charts** to show genre distributions.
-- **Box Plots** to highlight rating spreads across decades or genres.
+- What is the **relationship between price and star rating** for the books?
+- What is the **distribution of books by category/genre**?
+- Which **categories** have the **highest-rated** or **most-reviewed** books?
+- Which books have the **highest reviews or prices**?
+
+#### Planned Visuals
+
+- **Bar Charts** for top genres, book categories, and rating distributions.
+- **Scatter Plots** to show relationships between price and star ratings.
+- **Pie Charts** to show the distribution of books across categories.
+- **Word Clouds** to highlight frequent keywords from book descriptions or categories.
+- **Box Plots** to examine price distributions across categories.
 
 ---
 
 ### 6. Data Storage  
-After processing, we’ll save the final dataset as a **JSON file**. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases like MongoDB if needed.
+
+After processing, we’ll save the final dataset as a **JSON file**. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases.
 
 ---
 
-### 7. (Optional) Web App Deployment with Streamlit
+### 7. (Optional) Web App Deployment with Streamlit  
+
 If time allows, we’d like to build a simple **Streamlit app** to showcase our findings interactively. Users could:
 
-- Browse visual summaries.
-- Filter results by decade or genre.
-- Explore trends in a more dynamic way.
+- Browse visual summaries and trends.
+- Filter results by genre, price range, or rating.
+- Explore the relationships between different book attributes in a dynamic way.
 
 This would be a bonus step to improve the presentation and make the project more engaging.
-
----
-
