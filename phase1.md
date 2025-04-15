@@ -74,7 +74,7 @@ Using **Seaborn** and **Matplotlib**, we will perform both statistical and visua
 
 ### 6. Data Storage  
 
-After processing, we’ll save the final dataset as a **JSON file**. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases.
+After processing, we’ll save the final dataset as a **MongoDB Database**. This format is easy to work with, portable, and can be reused in future projects, web apps, or databases.
 
 ---
 
