@@ -57,7 +57,7 @@ In this phase, you will define your project idea and submit a brief plan.
 - Mention the types of charts you plan to create (bar charts, line graphs, heatmaps).
 - If applicable, state that you will deploy findings via **Streamlit**.
 
-#### **Step 6: Submit Your Project Idea** ⬜
+#### **Step 6: Submit Your Project Idea** ✅
 
 - Write a **short proposal** covering the points above.
 - Submit your project idea using the [official form](https://forms.office.com/r/FRXDytcjXZ).
@@ -65,7 +65,7 @@ In this phase, you will define your project idea and submit a brief plan.
 
 ---
 
-### **Phase 2: Full Implementation (Deadline TBD)**
+### **Phase 2: Full Implementation (Deadline May 2nd)**
 
 Once your project idea is approved, you will complete the full implementation following these steps.
 
@@ -73,7 +73,7 @@ Once your project idea is approved, you will complete the full implementation fo
 
 ## **3. Step-by-Step Implementation Guide**
 
-### **Step 1: Environment Setup** ⬜
+### **Step 1: Environment Setup** ✅
 
 1. Install the necessary Python libraries for web scraping, data processing, visualization, and storage.
 2. Set up a project directory structure with folders for raw data, scripts, notebooks, visualizations, and database storage.
@@ -81,7 +81,7 @@ Once your project idea is approved, you will complete the full implementation fo
 
 ---
 
-### **Step 2: Data Extraction** ⬜
+### **Step 2: Data Extraction** ✅
 
 1. Analyze the structure of the chosen website using **Inspect Element** in a browser.
 2. Identify the specific elements to scrape (e.g., job title, price, rating).
@@ -150,7 +150,7 @@ Here are some suggested websites based on different types of data analysis:
 
 ## **5. Project Deliverables**
 
-- ⬜ Project proposal (Phase 1)  
+- ✅ Project proposal (Phase 1)  
 - ⬜ Code for data extraction  
 - ⬜ Raw extracted data file  
 - ⬜ Report with analysis and findings  
@@ -159,5 +159,3 @@ Here are some suggested websites based on different types of data analysis:
 - ⬜ *(Bonus)* Streamlit web app  
 
 ---
-
-### **Good Luck! 🚀**
