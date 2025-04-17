@@ -90,7 +90,7 @@ Once your project idea is approved, you will complete the full implementation fo
 
 ---
 
-### **Step 3: Data Cleaning & Processing** ⬜
+### **Step 3: Data Cleaning & Processing** ✅
 
 1. Remove unnecessary or incorrect values (e.g., empty entries, duplicates).
 2. Standardize text (e.g., convert to lowercase, remove special characters).
@@ -101,7 +101,7 @@ Once your project idea is approved, you will complete the full implementation fo
 
 ---
 
-### **Step 4: Data Analysis** ⬜
+### **Step 4: Data Analysis** ✅
 
 1. Perform **basic statistical analysis** to understand the dataset.
 2. Identify **trends and correlations** in the data.
@@ -110,7 +110,7 @@ Once your project idea is approved, you will complete the full implementation fo
 
 ---
 
-### **Step 5: Data Visualization** ⬜
+### **Step 5: Data Visualization** ✅
 
 1. Choose **appropriate visualizations** based on your data type.
 2. Create clear and informative graphs:
@@ -151,10 +151,10 @@ Here are some suggested websites based on different types of data analysis:
 ## **5. Project Deliverables**
 
 - ✅ Project proposal (Phase 1)  
-- ⬜ Code for data extraction  
-- ⬜ Raw extracted data file  
-- ⬜ Report with analysis and findings  
-- ⬜ Visualizations (graphs, charts)  
+- ✅ Code for data extraction  
+- ✅ Raw extracted data file  
+- ✅ Report with analysis and findings  
+- ✅ Visualizations (graphs, charts)  
 - ⬜ Database with final processed data  
 - ⬜ *(Bonus)* Streamlit web app  
 
