@@ -153,7 +153,7 @@ Here are some suggested websites based on different types of data analysis:
 - ✅ Project proposal (Phase 1)  
 - ✅ Code for data extraction  
 - ✅ Raw extracted data file  
-- ✅ Report with analysis and findings  
+- ⬜ Report with analysis and findings  
 - ✅ Visualizations (graphs, charts)  
 - ⬜ Database with final processed data  
 - ⬜ *(Bonus)* Streamlit web app  
