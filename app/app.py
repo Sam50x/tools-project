@@ -1,8 +1,13 @@
 import streamlit as st
 
-main_page = st.Page("pages/main_page.py", title="Main Page")
-data_page = st.Page("pages/data_page.py", title="Data Page")
+st.title('Welcome to our Project')
 
-pg = st.navigation([main_page, data_page])
+st.text_input("Your name", key="name")
 
-pg.run()
+name = st.session_state.name
+
+if name:
+    f'Hello, {st.session_state.name}. This is our Data Science Tools web scraping project.'
+    'Enjoy, bitch! 😉'
+
+url = 'https://books.toscrape.com'
