@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+import os
 
 st.title('Welcome to our Project')
 
@@ -19,8 +20,9 @@ st.divider()
 url = 'https://books.toscrape.com'
 st.markdown(f'We are scraping data from: [Books to Scrape Website]({url})')
 
-
-df = pd.read_csv('books_clean.csv')
+dir_path = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(dir_path, 'books_clean.csv')
+df = pd.read_csv(csv_path)
 st.write(df)
 
 st.divider()
